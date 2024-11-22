@@ -8,7 +8,7 @@ Realizar los siguientes paso:
 
 1) Realizar git clone del proyecto 
 ```bash
-git clone https://github.com/CbedoyaRamirez/app-interrapidisimo-net.git
+git clone https://github.com/CbedoyaRamirez/api-linktic.git
 ```
 
 2) Ejecutar el proyecto
