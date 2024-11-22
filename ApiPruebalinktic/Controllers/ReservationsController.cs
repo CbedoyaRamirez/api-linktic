@@ -68,7 +68,7 @@ namespace ApiPruebaLinktic.Controllers
 
         
         [HttpPost("BookingReservations" ,Name = "AddBookingReservations")]
-        public async Task<ActionResult<Reservation>> PostEstudiante(Reservation reservation)
+        public async Task<ActionResult<Reservation>> PostReservation(Reservation reservation)
         {
             _context.Reservation.Add(reservation);
             await _context.SaveChangesAsync();
@@ -78,7 +78,7 @@ namespace ApiPruebaLinktic.Controllers
 
         
         [HttpDelete("CancellingReservations", Name = "CancellingReservations")]
-        public async Task<IActionResult> DeleteEstudiante(int id)
+        public async Task<IActionResult> DeleteReservation(int id)
         {
             var reservation = await _context.Reservation.FindAsync(id);
             if (reservation == null)
