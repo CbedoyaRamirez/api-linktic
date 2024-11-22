@@ -34,5 +34,9 @@ CREATE TABLE `app-linktic`.reservation (
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 ```
 
+## Ejecutar Docker
 
-
+```bash
+docker build -t apipruebalinktic .
+docker run -d -p 5000:5000 --name backend-container apipruebalinktic
+```
