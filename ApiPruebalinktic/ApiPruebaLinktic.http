@@ -1,0 +1,6 @@
+@ApiPruebaLinktic_HostAddress = http://localhost:5161
+
+GET {{ApiPruebaLinktic_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
